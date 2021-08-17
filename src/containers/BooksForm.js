@@ -13,6 +13,7 @@ function BooksForm() {
             <select>
                 {options}
            </select>
+           <button className="btn">Add Book</button>
         </form>
     )
 }
