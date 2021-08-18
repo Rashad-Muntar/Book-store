@@ -1,5 +1,5 @@
-import React from 'react';
-import { useState } from 'react';
+/* eslint-disable no-unused-vars */
+import React, { useState } from 'react';
 
 const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
@@ -9,13 +9,11 @@ const BooksForm = () => {
       {category}
     </option>
   ));
-  
-  const [book, setBook] = useState({title: '', category: ''});
-  let bookTitle = '';
-  let bookCategory = '';
+
+  const [book, setBook] = useState({ title: '', category: '' });
 
   const handleChange = (e) => {
-    if(e.target.name === 'title'){
+    if (e.target.name === 'title') {
       setBook({ title: e.target.value });
     } else {
       setBook({ category: e.target.value });
