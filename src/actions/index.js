@@ -1,11 +1,13 @@
 const newBookAction = (book) => {
-    type: "CREATE_BOOK",
-    book
-}
+  'CREATE_BOOK';
+
+  book;
+};
 
 const deleteBookAction = (book) => {
-    type: "REMOVE_BOOK",
-    book
-}
+  'REMOVE_BOOK';
 
-export {newBookAction, deleteBookAction}
+  book;
+};
+
+export { newBookAction, deleteBookAction };

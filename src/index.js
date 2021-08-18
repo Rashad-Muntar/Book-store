@@ -1,12 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 import App from './App';
+import rootReducer from './reducers/index';
 import reportWebVitals from './reportWebVitals';
 
-const store = createStore();
+const bookReducer = [
+  {
+    id: Math.random().toFixed(2),
+    title: 'Principles',
+    category: 'Learning',
+  },
+
+  {
+    id: Math.random().toFixed(2),
+    title: 'The 5am Club',
+    category: 'Learning',
+  },
+
+  {
+    id: Math.random().toFixed(2),
+    title: 'The greatness guide',
+    category: 'Biography',
+  },
+];
+
+const intialState = { bookReducer };
+
+const store = createStore(rootReducer, intialState);
+
 ReactDOM.render(
   <Provider store={store}>
-      <App />
+    <App />
   </Provider>,
   document.getElementById('root'),
 );
