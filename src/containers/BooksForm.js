@@ -13,7 +13,7 @@ const BooksForm = () => {
 
   const [book, setBook] = useState({ title: '', category: '' });
   const dispatch = useDispatch();
-  // const newBook = {};
+
   let title = '';
   let category = '';
   const handleChange = (e) => {
@@ -25,12 +25,10 @@ const BooksForm = () => {
       category = e.target.value;
       setBook((state) => ({ ...state, category }));
     }
-    // setBook(newBook);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(book);
     dispatch(createAction({ ...book, id: Math.random().toFixed(2) }));
   };
 

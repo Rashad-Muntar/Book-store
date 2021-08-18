@@ -1,9 +1,15 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { removeAction } from '../actions';
 import Book from '../components/Book';
 
 function BooksList() {
   const books = useSelector((state) => state.bookReducer);
+  const dispatch = useDispatch();
+
+  const handleRemoveBook = (book) => {
+    dispatch(removeAction(book));
+  };
 
   return (
     <div>
@@ -21,9 +27,8 @@ function BooksList() {
              books.map((book) => (
                <Book
                  key={book.id}
-                 title={book.title}
-                 category={book.category}
-                 book={book.id}
+                 book={book}
+                 removeBook={handleRemoveBook}
                />
              ))
          }
