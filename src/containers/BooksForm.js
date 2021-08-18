@@ -10,16 +10,25 @@ const BooksForm = () => {
     </option>
   ));
   
+  const [book, setBook] = useState({title: '', category: ''});
+  let bookTitle = '';
+  let bookCategory = '';
 
-
+  const handleChange = (e) => {
+    if(e.target.name === 'title'){
+      setBook({ title: e.target.value });
+    } else {
+      setBook({ category: e.target.value });
+    }
+  };
 
   return (
     <form>
-      <input type="text" className="input" />
-      <select>
+      <input name="title" onChange={handleChange} type="text" className="input" />
+      <select name="category" onChange={handleChange}>
         {options}
       </select>
-      <button type="submit" className="btn">Add Book</button>
+      <button onClick={handleChange} type="submit" className="btn">Add Book</button>
     </form>
   );
 };
