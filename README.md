@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# REACT & REDUX BOOK-STORE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A book-store developed and deployed to heroku 
 
-## Available Scripts
+<p align="center">
+    <a href="https://img.shields.io/badge/Microverse-blueviolet" alt="Contributors">
+        <img src="https://img.shields.io/badge/Microverse-blueviolet" /></a>
+    <a href="https://www.javascript.com/" alt="JS">
+        <img src="https://img.shields.io/badge/javaScript-ES6-yellow" /></a>
+    <a href="https://webpack.js.org//" alt="Webpack">
+        <img src="https://img.shields.io/badge/Webpack.js-5.21.2-blue" /></a>
+    <a href="https://eslint.org/" alt="Eslint">
+        <img src="https://img.shields.io/badge/eslint-6.8.0-red" /></a>
+    <a href="https://stylelint.io/" alt="Stylelint">
+        <img src="https://img.shields.io/badge/Stylelint-13.3.x-green" /></a>
+</p>
 
-In the project directory, you can run:
+<p align="center">
+    <br />
+    <br />&#10023;
+    <a href="#Prerequisites">Watch the Live Version</a> &#10023;
+    <a href="#Prerequisites">Prerequisites</a> &#10023;
+    <a href="#Getting-Started">Getting Started</a> &#10023;
+    <a href="#Usage">Usage</a> &#10023;
+    <a href="#Contributing">Contributing</a> &#10023;
+    <a href="#Author">Author</a> &#10023;
+    <a href="#Show-your-support">Show your support</a> &#10023;
+    <a href="#License">License</a> &#10023;
+    <a href="#Acknowledgments">Acknowledgments</a> &#10023;
+    <a href="https://github.com/Rashad-Muntar/to-do">Report Bug</a>&#10023;
 
-### `yarn start`
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br/>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<b>React Calcultor</b> A book-store application built using react redux and react redux and deployed to heroku
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Watch the Live Version
 
-### `yarn build`
+[Live Demo](https://pure-wildwood-49126.herokuapp.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- JavaScript ES6
+- React
+- React-Redux
+- Redux
+- NodeJS
+- Webpack
+- Buildpack
+- Heroku
+- Code Editor(VScode)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+### Usage
+1. Navigate to the reposatory of this application https://github.com/Rashad-Muntar/Book-store
+2. Clone the reposatory by using the `git clone` command in your terminal
+3. `cd` into the clone reposatory
+4. Open the code base using any code editor or your choice, preferably "visual studio code editor"
+5. Open the vscode terminal and run the application by typing `npm start` and hit enter.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This project was created for educational purposes as part of the Microverse web development curriculum; contributing is not accepted.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Feel free to check the [issues page](https://github.com/Rashad-Muntar/Book-store/issues).
 
-## Learn More
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👤 **Rashad Muntar**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- GitHub: [@Rashad-Muntar](https://github.com/Rashad-Muntar)
+- Twitter - [@RashadToure](https://twitter.com/RashadToure)
+- LinkedIn: [Rashad Muntar](https://www.linkedin.com/in/rashad-muntar/)
 
-### Code Splitting
+👤 **Widzmarc Jean Nesly Phelle**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- GitHub: [@widzthedvloper](https://github.com/widzthedvloper)
+- Twitter - [@widzthedvloper](https://twitter.com/widzthedvloper)
+- LinkedIn: [@widzthedvloper](https://www.linkedin.com/in/widzmarc-jean-nesly-phelle-252a26129/)
 
-### Analyzing the Bundle Size
+### Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Give a ⭐️ if you like this project!
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License
