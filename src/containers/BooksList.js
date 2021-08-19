@@ -6,6 +6,7 @@ import CategoryFilter from '../components/CategoryFilter';
 
 function BooksList() {
   const books = useSelector((state) => state.bookReducer);
+  const filter = useSelector((state) => state.filterReducer);
   const dispatch = useDispatch();
 
   const handleRemoveBook = (book) => {
@@ -16,6 +17,8 @@ function BooksList() {
     dispatch(filterAction(e.target.value));
     console.log(e.target.value);
   };
+
+  const filteredBooks = (filter !== 'All') ? books.filter((book) => book.category === filter) : books;
 
   return (
     <div>
@@ -32,14 +35,14 @@ function BooksList() {
         </thead>
         <tbody>
           {
-             books.map((book) => (
-               <Book
-                 key={book.id}
-                 book={book}
-                 removeBook={handleRemoveBook}
-               />
-             ))
-         }
+           filteredBooks.map((book) => (
+             <Book
+               key={book.id}
+               book={book}
+               handleRemoveBook={handleRemoveBook}
+             />
+           ))
+          }
 
         </tbody>
       </table>
