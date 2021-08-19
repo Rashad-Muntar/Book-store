@@ -15,7 +15,6 @@ function BooksList() {
 
   const handleFilterChanger = (e) => {
     dispatch(filterAction(e.target.value));
-    console.log(e.target.value);
   };
 
   const filteredBooks = (filter !== 'All') ? books.filter((book) => book.category === filter) : books;
