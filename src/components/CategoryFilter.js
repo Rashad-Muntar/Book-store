@@ -11,7 +11,7 @@ const CategoryFilter = ({ CategoryFilter }) => {
   ));
 
   return (
-    <select onChange={CategoryFilter}>
+    <select className="CATEGORIES" onChange={CategoryFilter}>
       {options}
     </select>
   );

@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { filterAction, removeAction } from '../actions';
 import Book from '../components/Book';
 import CategoryFilter from '../components/CategoryFilter';
+import '../App.css';
 
 function BooksList() {
   const books = useSelector((state) => state.bookReducer);
@@ -21,9 +22,14 @@ function BooksList() {
 
   return (
     <div>
-      <h2>Book List</h2>
-      <span>Filter: </span>
-      <CategoryFilter CategoryFilter={handleFilterChanger} />
+      <div className="panel-bg">
+        <span className="Bookstore-CMS Text-Style-5">Bookstore CMS</span>
+        <span className="BOOKS">BOOKS</span>
+        <CategoryFilter CategoryFilter={handleFilterChanger} />
+        <span className="Oval">
+          <img className="Mask" src="https://img.icons8.com/ios-glyphs/30/4a90e2/user--v1.png" alt="user" />
+        </span>
+      </div>
       <table>
         <thead>
           <tr>
