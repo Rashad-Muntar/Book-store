@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeAction } from '../actions';
+import { filterAction, removeAction } from '../actions';
 import Book from '../components/Book';
 import CategoryFilter from '../components/CategoryFilter';
 
@@ -12,11 +12,16 @@ function BooksList() {
     dispatch(removeAction(book));
   };
 
+  const handleFilterChanger = (e) => {
+    dispatch(filterAction(e.target.value));
+    console.log(e.target.value);
+  };
+
   return (
     <div>
       <h2>Book List</h2>
       <span>Filter: </span>
-      <CategoryFilter />
+      <CategoryFilter CategoryFilter={handleFilterChanger} />
       <table>
         <thead>
           <tr>
