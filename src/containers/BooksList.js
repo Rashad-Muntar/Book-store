@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeAction } from '../actions';
 import Book from '../components/Book';
+import CategoryFilter from '../components/CategoryFilter';
 
 function BooksList() {
   const books = useSelector((state) => state.bookReducer);
@@ -14,6 +15,8 @@ function BooksList() {
   return (
     <div>
       <h2>Book List</h2>
+      <span>Filter: </span>
+      <CategoryFilter />
       <table>
         <thead>
           <tr>
