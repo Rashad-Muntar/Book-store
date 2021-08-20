@@ -184,3 +184,7 @@
   margin: 0.75rem 1.75rem 0.563rem 3.688rem;
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
 }
+
+.Lesson-Panel:hover {
+  border: 1px solid #4386bf;
+}
