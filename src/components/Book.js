@@ -7,9 +7,9 @@ function Book({ book, removeBook }) {
 
     <div className="Lesson-Panel">
       <div className="left-title-area">
-        <div className="title Text-Style-6">{book.title}</div>
-        <div className="title Text-Style-6">{book.title}</div>
-        <span className="Suzanne-Collins">Suzanne Collins</span>
+        <span className="category">{book.category}</span>
+        <div className="title">{book.title}</div>
+        <span className="sussan ">Suzanne Collins</span>
 
         <div className="delete-area">
           <span className="Comments">Comments</span>
@@ -21,7 +21,7 @@ function Book({ book, removeBook }) {
       <div className="panel-right-side">
 
         <div className="oval-area-wrapper">
-          <div className="Oval-2" />
+          <div className="chart" />
 
           <div className="percentage-area">
             <span className="-Percent-Complete">64%</span>
