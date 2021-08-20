@@ -13,7 +13,7 @@ function Book({ book, removeBook }) {
 
         <div className="delete-area">
           <span className="Comments">Comments</span>
-          <button className="Remove" type="button" onClick={() => removeBook(book)}>Remove</button>
+          <button className="remove" type="button" onClick={() => removeBook(book)}>Remove</button>
           <span className="Edit">Edit</span>
         </div>
       </div>
