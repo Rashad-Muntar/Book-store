@@ -44,12 +44,3 @@
   font-size: 16px;
   padding: 8px 22px;
 }
-
-/* Small screens less than 720px */
-@media screen and (max-width: 720px) {
-  .formTitle { text-align: center; }
-  .bookForm { flex-wrap: wrap; justify-content: center; }
-  .bookForm button { flex-basis: 65%; margin-top: 1em; }
-  .bookForm input { margin-right: 0; }
-  .bookForm select { flex-basis: 65%; margin-top: 1em; margin-right: 0; }
-}
