@@ -1,0 +1,13 @@
+
+select {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.35em;
+  color: #555;
+  cursor: pointer;
+  flex-basis: 20%;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 2em;
+  padding: 12px;
+}

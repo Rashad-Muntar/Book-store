@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { filterAction, removeAction } from '../actions';
 import Book from '../components/Book';
 import CategoryFilter from '../components/CategoryFilter';
+import '../styles/BookList.css';
 
 function BooksList() {
   const books = useSelector((state) => state.bookReducer);
@@ -20,19 +21,26 @@ function BooksList() {
   const filteredBooks = (filter !== 'All') ? books.filter((book) => book.category === filter) : books;
 
   return (
+
     <div>
-      <h2>Book List</h2>
-      <span>Filter: </span>
-      <CategoryFilter CategoryFilter={handleFilterChanger} />
-      <table>
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
-        <tbody>
+      <header className="m-b bg-white round-top">
+        <div className="center max-width-90 flex-row">
+          <h1 className="app-title">
+            Bookstore CMS
+          </h1>
+          <div className="cat-title">
+            <span className="text-grey">Books</span>
+          </div>
+          <div className="categories text-center">
+            <CategoryFilter CategoryFilter={handleFilterChanger} />
+          </div>
+          <div className="react-logo">
+            <img className="image-logo" src="https://img.icons8.com/ios-glyphs/30/4a90e2/user--v1.png" alt="user" />
+          </div>
+        </div>
+      </header>
+      <main className="bg-grey">
+        <div className="center max-width-90 bookSection">
           {
            filteredBooks.map((book) => (
              <Book
@@ -42,9 +50,8 @@ function BooksList() {
              />
            ))
           }
-
-        </tbody>
-      </table>
+        </div>
+      </main>
     </div>
   );
 }

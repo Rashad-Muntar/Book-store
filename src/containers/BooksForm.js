@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { createAction } from '../actions';
+import '../styles/BookForm.css';
 
 const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
@@ -16,6 +17,7 @@ const BooksForm = () => {
 
   let title = '';
   let category = '';
+
   const handleChange = (e) => {
     if (e.target.name === 'title') {
       title = e.target.value;
@@ -33,13 +35,18 @@ const BooksForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input name="title" onChange={handleChange} type="text" className="input" />
-      <select name="category" onChange={handleChange}>
-        {options}
-      </select>
-      <button type="submit" className="btn">Add Book</button>
-    </form>
+    <div className="bg-grey round-bottom box-shadow">
+      <div className="center max-width-90 border-top">
+        <div className="formTitle">Add New Book</div>
+        <form onSubmit={handleSubmit} className="bookForm">
+          <input name="title" onChange={handleChange} placeholder="Book Title" type="text" className="input" />
+          <select name="category" onChange={handleChange}>
+            {options}
+          </select>
+          <button type="submit">Add Book</button>
+        </form>
+      </div>
+    </div>
   );
 };
 
