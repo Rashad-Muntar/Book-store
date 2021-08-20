@@ -17,6 +17,7 @@ const BooksForm = () => {
 
   let title = '';
   let category = '';
+
   const handleChange = (e) => {
     if (e.target.name === 'title') {
       title = e.target.value;
@@ -38,8 +39,8 @@ const BooksForm = () => {
       <div className="center max-width-90 border-top">
         <div className="formTitle">Add New Book</div>
         <form onSubmit={handleSubmit} className="bookForm">
-         <input name="title" onChange={handleChange} type="text" className="input" />
-          <select name="category" value={category} onChange={handleChange}>
+          <input name="title" onChange={handleChange} placeholder="Book Title" type="text" className="input" />
+          <select name="category" onChange={handleChange}>
             {options}
           </select>
           <button type="submit">Add Book</button>
