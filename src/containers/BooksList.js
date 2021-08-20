@@ -34,7 +34,9 @@ function BooksList() {
           <div className="categories text-center">
             <CategoryFilter CategoryFilter={handleFilterChanger} />
           </div>
-          <img cclassName="react-logo" src="https://img.icons8.com/ios-glyphs/30/4a90e2/user--v1.png" alt="user" />
+          <div className="react-logo">
+            <img className="image-logo" src="https://img.icons8.com/ios-glyphs/30/4a90e2/user--v1.png" alt="user" />
+          </div>
         </div>
       </header>
       <main className="bg-grey">
