@@ -21,10 +21,10 @@ function Book({ book, removeBook }) {
       <div className="panel-right-side">
 
         <div className="oval-area-wrapper">
-          <div className="chart" />
+          <div className="chart" aria-label="chart" />
 
           <div className="percentage-area">
-            <span className="-Percent-Complete">64%</span>
+            <span className="percentage">64%</span>
             <span className="">Completed</span>
           </div>
         </div>

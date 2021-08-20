@@ -10,14 +10,27 @@
     align-items: center
   };
 
+  .oval-area-wrapper{
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      border: 1px solid blue !important;
+      width: 300px;
+  }
+
+  .update-area{
+      border: 1px solid rebeccapurple;
+  }
+
   .chart{
     width: 4.25rem;
     height: 4.25rem;
-    border-style: solid;
-    border-width: 5px;
-    border-image-source: linear-gradient(to bottom, var(--medium-blue), var(--dodger-blue));
-    border-image-slice: 1;
-  };
+    border: solid 5px #e8e8e8;
+    border-radius: 50%;
+    border-top-color: #4386bf;
+    border-right-color: #4386bf;
+
+  }
 
   .category {
     width: 3.063rem;
@@ -85,4 +98,34 @@
     color: #4386bf;
     background-color: transparent;
     border: none;
+  }
+
+  .panel-right-side{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid red;
+  }
+
+  .panel-right-side:first-child{
+    border: 1px solid green;
+}
+
+  .percentage-area{
+      /* display: flex;
+      justify-content: space-between;
+      align-items: center; */
+      /* border: 1px solid red; */
+  }
+
+  .percentage {
+    height: 2.438rem;
+    margin: 0.063rem 5.75rem 0 0.688rem;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--black-two);
   }
