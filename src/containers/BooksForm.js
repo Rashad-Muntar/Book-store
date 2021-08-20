@@ -45,7 +45,7 @@ const BooksForm = () => {
             value={title}
             onChange={handleChange}
           />
-          <select name="category" placeholder="Category" value={category} onChange={handleChange}>
+          <select name="category" value={category} onChange={handleChange}>
             {options}
           </select>
           <button type="submit">Add Book</button>
