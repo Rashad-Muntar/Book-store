@@ -1,131 +1,186 @@
 .Lesson-Panel {
-    height: 9rem;
-    margin-bottom: 1.5rem;
-    padding: 2rem 9.188rem 1.625rem 1.688rem;
-    border-radius: 4px;
-    border: solid 1px #e8e8e8;
-    background-color: var(--white);
-    display: flex;
-    justify-content: space-between;
-    align-items: center
-  };
-
-  .oval-area-wrapper{
-      display: flex !important;
-      justify-content: space-between !important;
-      align-items: center !important;
-      border: 1px solid blue !important;
-      width: 300px;
-  }
-
-  .update-area{
-      border: 1px solid rebeccapurple;
-  }
-
-  .chart{
-    width: 4.25rem;
-    height: 4.25rem;
-    border: solid 5px #e8e8e8;
-    border-radius: 50%;
-    border-top-color: #4386bf;
-    border-right-color: #4386bf;
-
-  }
-
-  .category {
-    width: 3.063rem;
-    height: 1.125rem;
-    margin: 0 2.438rem 0 0;
-    opacity: 0.5;
-    font-family: Montserrat;
-    font-size: 0.875rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--black-two);
-  }
-
-  .title {
-    width: 12.313rem;
-    height: 1.813rem;
-    margin: 0.188rem 20.188rem 0 0;
-    font-family: RobotoSlab;
-    font-size: 1.375rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: -0.2px;
-    color: var(--black-two);
-  }
-
-  .sussan {
-    width: 6.688rem;
-    height: 1.188rem;
-    font-family: RobotoSlab;
-    font-size: 0.875rem;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #4386bf;
-    margin-bottom: 30px;
-    display: inline-block;
-  }
-
-  .delete-area{
-    color: #4386bf;
-  }
-
-  .delete-area span{
-    margin-right: 20px;
-  }
-
-  .remove {
-    width: 3.375rem;
-    height: 1.188rem;
-    margin-right: 20px;
-    font-family: RobotoSlab;
-    font-size: 0.875rem;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #4386bf;
-    background-color: transparent;
-    border: none;
-  }
-
-  .panel-right-side{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border: 1px solid red;
-  }
-
-  .panel-right-side:first-child{
-    border: 1px solid green;
+  height: 9rem;
+  margin-bottom: 1.5rem;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-  .percentage-area{
-      /* display: flex;
-      justify-content: space-between;
-      align-items: center; */
-      /* border: 1px solid red; */
-  }
+.oval-area-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 2px solid #ccc;
+  width: 253px;
+}
 
-  .percentage {
-    height: 2.438rem;
-    margin: 0.063rem 5.75rem 0 0.688rem;
-    font-family: Montserrat;
-    font-size: 2rem;
-    font-weight: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--black-two);
-  }
+.update-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.chart {
+  width: 4.25rem;
+  height: 4.25rem;
+  border: solid 5px #e8e8e8;
+  border-radius: 50%;
+  border-top-color: #4386bf;
+  border-right-color: #4386bf;
+}
+
+.category {
+  width: 3.063rem;
+  height: 1.125rem;
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.title {
+  width: 100%;
+  height: 1.813rem;
+  margin: 0.188rem 20.188rem 0 0;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: var(--black-two);
+}
+
+.sussan {
+  width: 100%;
+  height: 1.188rem;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.delete-area {
+  color: #4386bf;
+}
+
+.delete-area span {
+  margin-right: 20px;
+}
+
+.Edit {
+  padding-left: 10px;
+  border: none;
+  border-left: 2px solid #ccc;
+}
+
+.remove {
+  width: 3.375rem;
+  height: 1.188rem;
+  margin-right: 20px;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  background-color: transparent;
+  padding-left: 10px;
+  border: none;
+  border-left: 2px solid #ccc;
+}
+
+.panel-right-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-right-side:first-child {
+  border: 1px solid green;
+}
+
+.percentage-area {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+}
+
+.percentage {
+  height: 2.438rem;
+  margin: 0.063rem 5.75rem 0 0.688rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.Current-Chapter {
+  width: 7.875rem;
+  height: 1.125rem;
+  margin: 0.063rem 3.625rem 0 3.688rem;
+  opacity: 0.5;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgb(126, 123, 123);
+  text-align: left;
+}
+
+.Current-Lesson {
+  width: 7rem;
+  height: 1.313rem;
+  margin: 0.438rem 6.813rem 0.25rem 3.688rem;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+  text-align: left;
+}
+
+.Update-progress {
+  width: 8.938rem;
+  height: 1.125rem;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  background-color: #0290ff;
+  border-radius: 3px;
+  margin: 0.75rem 1.75rem 0.563rem 3.688rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+}

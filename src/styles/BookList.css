@@ -1,44 +1,49 @@
 .app-title {
-  color: #0692FF;
+  color: #0692ff;
   font-size: 4vmin;
 }
 
 .bookSection {
   padding: 2em;
 }
+
 .book {
   align-items: center;
-  border: 1px solid #DFDFDF; 
-  background-color: #FFF;  
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
   border-radius: 0.3em;
   display: flex;
   margin-bottom: 1em;
-  padding: 24px;  
+  padding: 24px;
 }
+
 #left {
   flex-basis: 50%;
 }
+
 #center {
   align-items: center;
-  border-right: 1px solid #DDD;
+  border-right: 1px solid #ddd;
   display: inline-flex;
-  flex-basis: 20%;  
-  justify-content: center;  
-  padding-right: 20px;  
+  flex-basis: 20%;
+  justify-content: center;
+  padding-right: 20px;
 }
-#right {  
+
+#right {
   flex-basis: 30%;
   justify-self: center;
   padding-left: 2.5%;
   text-align: left;
 }
+
 #right button {
   background-color: #0290ff;
   border: none;
   border-radius: 0.35em;
-  color: #FFF;
+  color: #fff;
   cursor: not-allowed;
-  padding: 8px 22px;  
+  padding: 8px 22px;
 }
 
 .category {
@@ -55,33 +60,38 @@
 .author {
   color: #3a82b9;
   font-weight: 400;
-  margin-bottom: 12px;  
+  margin-bottom: 12px;
 }
 .actions { text-align: left; }
-.actions button {  
+
+.actions button {
   background-color: transparent;
   border: none;
   color: #3a82b9;
 }
+
 .actions button:nth-child(1) {
   padding-left: 0;
 }
+
 .actions button:nth-child(2) {
-  border-left: 1px solid #DDD;
-  border-right: 1px solid #DDD;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
   margin: 0 8px;
-  padding: 0 8px
+  padding: 0 8px;
 }
 .percent { padding-left: 12px; }
+
 .percentage {
   font-weight: 300;
 }
+
 .completed {
   color: gray;
   font-weight: 300;
 }
 
-.current { 
+.current {
   color: gray;
   font-weight: 400;
   font-size: 12px;
@@ -90,7 +100,6 @@
 .chapter {
   margin-bottom: 1em;
 }
-
 
 .pie-graph {
   width: 60px;
@@ -112,5 +121,5 @@
   #center { flex-basis: 100%; padding: 12px 0; border-right: none; margin-top: 0.8em; margin-bottom: 0.8em; }
   .categories { text-align: center; flex-basis: 100%; order: 3; }
   .cat-title { display: none; }
-  #right { flex-basis: 100%; text-align: center; padding-left: 0;  }
+  #right { flex-basis: 100%; text-align: center; padding-left: 0; }
 }

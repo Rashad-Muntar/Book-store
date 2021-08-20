@@ -1,5 +1,5 @@
-.formTitle {  
-  color: #AAA;
+.formTitle {
+  color: #aaa;
   font-size: 1.4em;
   font-weight: bold;
   margin-bottom: 12px;
@@ -10,36 +10,39 @@
   display: flex;
   padding-bottom: 6em;
 }
+
 .bookForm input {
-  border: 1px solid #DDD;
+  border: 1px solid #ddd;
   border-radius: 0.35em;
   color: #555;
   flex-basis: 60%;
   font-size: 18px;
   font-weight: bold;
   margin-right: 2em;
-  padding: 12px;  
+  padding: 12px;
 }
+
 .bookForm select {
-  background-color: #FFF;
-  border: 1px solid #DDD;
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-radius: 0.35em;
   color: #555;
-  flex-basis: 20%;  
+  flex-basis: 20%;
   font-weight: bold;
-  font-size: 16px; 
+  font-size: 16px;
   margin-right: 2em;
   padding: 12px;
 }
+
 .bookForm button {
   background-color: #0290ff;
   border: none;
   border-radius: 0.35em;
-  color: #FFF;
+  color: #fff;
   flex-basis: 20%;
   font-weight: bold;
-  font-size: 16px;  
-  padding: 8px 22px;  
+  font-size: 16px;
+  padding: 8px 22px;
 }
 
 /* Small screens less than 720px */

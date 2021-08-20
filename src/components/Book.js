@@ -30,9 +30,9 @@ function Book({ book, removeBook }) {
         </div>
 
         <div className="update-area">
-          <span className="">Current Chapter</span>
-          <span className="">Chapter 17</span>
-          <span className="">Update progress</span>
+          <span className="Current-Chapter">Current Chapter</span>
+          <span className="Current-Lesson">Chapter 17</span>
+          <span className="Update-progress">Update progress</span>
         </div>
 
       </div>
