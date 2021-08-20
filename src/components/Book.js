@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/Book.css';
 
-function Book({ book, removeBook }) {
+function Book({ book, handleRemoveBook }) {
   return (
 
     <div className="Lesson-Panel">
@@ -13,7 +13,7 @@ function Book({ book, removeBook }) {
 
         <div className="delete-area">
           <span className="Comments">Comments</span>
-          <button className="remove" type="button" onClick={() => removeBook(book)}>Remove</button>
+          <button className="remove" type="button" onClick={() => handleRemoveBook(book)}>Remove</button>
           <span className="Edit">Edit</span>
         </div>
       </div>
@@ -43,7 +43,7 @@ function Book({ book, removeBook }) {
 Book.propTypes = {
   book: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  removeBook: PropTypes.func.isRequired,
+  handleRemoveBook: PropTypes.func.isRequired,
 };
 
 export default Book;
