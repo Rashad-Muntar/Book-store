@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { BookCol } from '../styles';
 
 function Book({ book, removeBook }) {
   return (

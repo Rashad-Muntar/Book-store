@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { filterAction, removeAction } from '../actions';
 import Book from '../components/Book';
 import CategoryFilter from '../components/CategoryFilter';
-import '../styles.js';
+import '../styles/BookList.css';
 
 function BooksList() {
   const books = useSelector((state) => state.bookReducer);
@@ -21,17 +21,25 @@ function BooksList() {
   const filteredBooks = (filter !== 'All') ? books.filter((book) => book.category === filter) : books;
 
   return (
+
     <div>
-      <div className="panel-bg">
-        <span className="Bookstore-CMS Text-Style-5">Bookstore CMS</span>
-        <span className="BOOKS">BOOKS</span>
-        <CategoryFilter CategoryFilter={handleFilterChanger} />
-        <span className="Oval">
-          <img className="Mask" src="https://img.icons8.com/ios-glyphs/30/4a90e2/user--v1.png" alt="user" />
-        </span>
-      </div>
-      <div>
-        {
+      <header className="m-b bg-white round-top">
+        <div className="center max-width-90 flex-row">
+          <h1 className="app-title">
+            Bookstore CMS
+          </h1>
+          <div className="cat-title">
+            <span className="text-grey">Books</span>
+          </div>
+          <div className="categories text-center">
+            <CategoryFilter CategoryFilter={handleFilterChanger} />
+          </div>
+          <img cclassName="react-logo" src="https://img.icons8.com/ios-glyphs/30/4a90e2/user--v1.png" alt="user" />
+        </div>
+      </header>
+      <main className="bg-grey">
+        <div className="center max-width-90 bookSection">
+          {
            filteredBooks.map((book) => (
              <Book
                key={book.id}
@@ -40,7 +48,8 @@ function BooksList() {
              />
            ))
           }
-      </div>
+        </div>
+      </main>
     </div>
   );
 }
