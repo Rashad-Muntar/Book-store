@@ -38,13 +38,7 @@ const BooksForm = () => {
       <div className="center max-width-90 border-top">
         <div className="formTitle">Add New Book</div>
         <form onSubmit={handleSubmit} className="bookForm">
-          <input
-            placeholder="Book Title"
-            name="title"
-            type="text"
-            value={title}
-            onChange={handleChange}
-          />
+         <input name="title" onChange={handleChange} type="text" className="input" />
           <select name="category" value={category} onChange={handleChange}>
             {options}
           </select>
