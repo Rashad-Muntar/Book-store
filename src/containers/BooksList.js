@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { filterAction, removeAction } from '../actions';
 import Book from '../components/Book';
 import CategoryFilter from '../components/CategoryFilter';
-import '../App.css';
+import '../styles.js';
 
 function BooksList() {
   const books = useSelector((state) => state.bookReducer);
@@ -30,16 +30,8 @@ function BooksList() {
           <img className="Mask" src="https://img.icons8.com/ios-glyphs/30/4a90e2/user--v1.png" alt="user" />
         </span>
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
-        <tbody>
-          {
+      <div>
+        {
            filteredBooks.map((book) => (
              <Book
                key={book.id}
@@ -48,9 +40,7 @@ function BooksList() {
              />
            ))
           }
-
-        </tbody>
-      </table>
+      </div>
     </div>
   );
 }
